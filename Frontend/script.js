@@ -8,10 +8,13 @@ document.addEventListener('DOMContentLoaded', function() {
       e.preventDefault();
       // simple validation
       const email = document.getElementById('email').value.trim();
+      
+      // RESOLUTION: Choose the specific Telkom University domain
       if (!email.endsWith('@student.telkomuniversity.ac.id')) {
         alert('Gunakan email kampus (contoh: nama@student.telkomuniversity.ac.id)');
         return;
       }
+      
       // simulate login success -> redirect to home.html
       localStorage.setItem('campus_user', JSON.stringify({name: 'Raka Mahasiswa', email}));
       location.href = 'home.html';

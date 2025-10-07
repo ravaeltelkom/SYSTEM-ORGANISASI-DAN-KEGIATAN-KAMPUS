@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home - Sistem Organisasi Kampus</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <img src="logo_kampus.png" alt="Logo Kampus" style="width:48px;height:48px;border-radius:10px;">
+        
+        <div>
+          <div style="font-weight:700">Sistem Organisasi Kampus</div>
+          <div style="font-size:13px;color:var(--muted)">Dashboard mahasiswa</div>
+        </div>
+      </div>
+
+      <div class="nav">
+        <div class="search-row">
+          <input class="input" id="globalSearch" placeholder="Cari kegiatan atau organisasi..." />
+          <button class="btn ghost" onclick="location.href='filter.html'">Filter</button>
+        </div>
+        <div class="profile" style="margin-left:12px">
+          <div style="text-align:right">
+            <div style="font-weight:600">Raka Mahasiswa</div>
+            <div style="font-size:12px;color:var(--muted)">raka@kampus.ac.id</div>
+          </div>
+          <div class="avatar">RM</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="grid-3">
+        <div class="kartu card">
+          <div style="font-size:13px;color:var(--muted)">Organisasi diikuti</div>
+          <div style="font-size:22px;font-weight:700">4</div>
+          <div style="font-size:13px;color:var(--muted)">Tetap aktif</div>
+        </div>
+
+        <div class="kartu card">
+          <div style="font-size:13px;color:var(--muted)">Kegiatan aktif</div>
+          <div style="font-size:22px;font-weight:700">12</div>
+          <div style="font-size:13px;color:var(--muted)">Event minggu ini</div>
+        </div>
+
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-weight:700">Event Mendatang</div>
+              <div style="font-size:13px;color:var(--muted)">Seminggu ke depan</div>
+            </div>
+            <div class="badge">3</div>
+          </div>
+
+          <div style="margin-top:12px" class="card-list">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-weight:600">Workshop UX</div>
+                <div style="font-size:13px;color:var(--muted)">24 Okt 2025 • Lab RPL</div>
+              </div>
+              <button class="btn ghost" onclick="alert('Daftar Workshop (simulasi)')">Ikuti</button>
+            </div>
+
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-weight:600">Lomba Poster</div>
+                <div style="font-size:13px;color:var(--muted)">28 Okt 2025 • Aula</div>
+              </div>
+              <button class="btn ghost" onclick="alert('Daftar Lomba (simulasi)')">Ikuti</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section style="margin-top:20px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+          <h3 style="margin:0">Daftar Kegiatan Terbaru</h3>
+          <div>
+            <button class="btn ghost" onclick="location.href='college.html'">Lihat semua</button>
+          </div>
+        </div>
+
+        <div class="card" style="padding:12px">
+          <div class="card-list">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-weight:600">Pelatihan Public Speaking</div>
+                <div style="font-size:13px;color:var(--muted)">20 Okt 2025 • Gedung Serba Guna</div>
+              </div>
+              <div style="display:flex;gap:8px">
+                <button class="btn ghost" onclick="alert('Detail kegiatan')">Detail</button>
+                <button class="btn" onclick="alert('Kamu mengikuti kegiatan (simulasi)')">Ikuti</button>
+              </div>
+            </div>
+
+            <div style="height:1px;background:#eef2ff;margin:8px 0;border-radius:2px"></div>
+
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-weight:600">Bakti Sosial</div>
+                <div style="font-size:13px;color:var(--muted)">22 Okt 2025 • Lapangan</div>
+              </div>
+              <div style="display:flex;gap:8px">
+                <button class="btn ghost" onclick="alert('Detail kegiatan')">Detail</button>
+                <button class="btn" onclick="alert('Kamu mengikuti kegiatan (simulasi)')">Ikuti</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-top:20px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+          <h3 style="margin:0">Organisasi Populer</h3>
+          <div>
+            <button class="btn ghost" onclick="location.href='organisasi.html'">Lihat semua</button>
+          </div>
+        </div>
+
+        <div class="org-grid">
+          <div class="card">
+            <div style="display:flex;gap:10px;align-items:center">
+              <div style="width:48px;height:48px;border-radius:10px;background:#eef2ff;display:flex;align-items:center;justify-content:center;color:#2563eb;font-weight:700">AC</div>
+              <div>
+                <div style="font-weight:700">Art Club</div>
+                <div style="font-size:13px;color:var(--muted)">Komunitas seni & desain</div>
+              </div>
+            </div>
+            <div style="margin-top:12px;display:flex;justify-content:flex-end">
+              <button class="btn" onclick="alert('Gabung Art Club (simulasi)')">Gabung</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div style="display:flex;gap:10px;align-items:center">
+              <div style="width:48px;height:48px;border-radius:10px;background:#eef2ff;display:flex;align-items:center;justify-content:center;color:#2563eb;font-weight:700">SP</div>
+              <div>
+                <div style="font-weight:700">Sportive</div>
+                <div style="font-size:13px;color:var(--muted)">Komunitas olahraga</div>
+              </div>
+            </div>
+            <div style="margin-top:12px;display:flex;justify-content:flex-end">
+              <button class="btn" onclick="alert('Gabung Sportive (simulasi)')">Gabung</button>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div style="display:flex;gap:10px;align-items:center">
+              <div style="width:48px;height:48px;border-radius:10px;background:#eef2ff;display:flex;align-items:center;justify-content:center;color:#2563eb;font-weight:700">DS</div>
+              <div>
+                <div style="font-weight:700">Debate Squad</div>
+                <div style="font-size:13px;color:var(--muted)">Komunitas debat</div>
+              </div>
+            </div>
+            <div style="margin-top:12px;display:flex;justify-content:flex-end">
+              <button class="btn" onclick="alert('Gabung Debate Squad (simulasi)')">Gabung</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div style="display:flex;gap:10px;align-items:center">
+              <div style="width:48px;height:48px;border-radius:10px;background:#eef2ff;display:flex;align-items:center;justify-content:center;color:#2563eb;font-weight:700">GA</div>
+              <div>
+                <div style="font-weight:700">Green Action</div>
+                <div style="font-size:13px;color:var(--muted)">Komunitas lingkungan</div>
+              </div>
+            </div>
+            <div style="margin-top:12px;display:flex;justify-content:flex-end">
+              <button class="btn" onclick="alert('Gabung Green Action (simulasi)')">Gabung</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <div class="footer">Sistem Organisasi Kampus Telkom University Surabaya</div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

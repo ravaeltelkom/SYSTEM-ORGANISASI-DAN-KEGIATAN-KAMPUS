@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - Sistem Organisasi Kampus</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container" style="max-width:420px;margin-top:80px;">
+    <div class="card">
+      
+      <div style="text-align:center;margin-bottom:24px;padding-top:8px">
+        <img src="logo_kampus.png" alt="Logo Kampus Baru" style="width:64px;height:64px;margin:0 auto 10px;border-radius:10px;">
+        
+        <h2 style="margin:0">Selamat Datang</h2>
+        <p style="margin:6px 0 0;color:var(--muted)">Masuk untuk mengakses organisasi dan kegiatan kampus</p>
+      </div>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input class="input" type="email" id="email" placeholder="nama@kampus.ac.id" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input class="input" type="password" id="password" placeholder="••••••••" required />
+        </div>
+        
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:12px">
+          <a href="#" onclick="alert('Reset password link (simulasi)')" style="font-size:14px;font-weight:600">Lupa password?</a>
+          <button class="btn" type="submit">Login</button>
+        </div>
+      </form>
+    </div>
+
+    <p style="text-align:center;margin-top:20px;color:var(--muted)">
+      Belum punya akun? 
+      <a href="#" onclick="alert('Hubungi admin kampus untuk pendaftaran')" style="font-weight:600">Hubungi admin</a>
+    </p>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
